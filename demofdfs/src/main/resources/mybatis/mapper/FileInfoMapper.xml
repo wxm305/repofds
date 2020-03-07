@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exafastdfs.demofdfs.Mapper.FileInfoMapper">
+
+    <!--     public void insertFile(FileInfo fileInfo);-->
+    <select id="insertFile">
+        insert into FileInfo(filename,addtime,picaddr,filedesc,picdesc,picname,piclove,picson)
+        values(#{filename},#{addtime},#{picaddr},#{filedesc},#{picdesc},#{picname},#{piclove},#{picson})
+    </select>
+</mapper>
